@@ -1,0 +1,25 @@
+<ion-view title="Feed" hide-back-button="true" id="page4" style="background-color:#ffffff;" ng-controller="pageController">
+  <div class="bar bar-header bar-assertive">
+    <div class="h1 title">Feed RSS</div>
+  </div>
+  <ion-content padding="true" class="has-header" >
+    <div class="list">
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" ng-model="InputRssFeed" placeholder="Digite a URL do Feed RSS">
+        </label>
+        <button class="button button-small" ng-click="ChangeFeed()">
+          <i class="icon ion-search"></i>
+        </button>
+      </div>
+    </div>
+    <div align="center">
+    <img src="{{feed.channel.image.url}}" alt="{{feed.channel.title}}" title="{{feed.channel.title}}" >
+    </div>
+    <label id="ditetorios"> {{feed.channel.title}}</label>
+    <div class="card" ng-repeat="item in feed.channel.item">
+            <h4><a href="" ng-click="abrirConteudo(item.link)">{{item.title}}</a></h4>
+            <p>{{item.description}}</p>
+    </div>
+  </ion-content>
+</ion-view>

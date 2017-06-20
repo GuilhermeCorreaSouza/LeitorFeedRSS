@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="feed">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <title>Leitor Feed Rss</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="js/jquery-1.10.1.min.js"></script>
+
+    <!-- Angular -->
+    <script src="scripts/angular/angular.js"></script>
+    <script src="scripts/angular/angular-resource.js"></script>
+    <script src="scripts/angular/angular-route.js"></script>
+    <script src="scripts/angular/angular-touch.js"></script>
+    <script src="scripts/angular/angular-animate.js"></script>
+    <script src="scripts/angular/mui-angular.js"></script>
+
+    <link rel="stylesheet" href="js/angular-notify.css">
+    <script src="js/angular-notify.js"></script>
+
+    <link rel="stylesheet" href="css/material.indigo-pink.min.css">
+    <script src="js/material.min.js"></script>
+
+    <!-- diretiva combo box MUI -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mui.css" />
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Servicos -->
+    <script src="js/funcoesuteis.js"></script>
+    <script src="scripts/plugins/notifyjs/notify.js"></script>
+    <script src="js/SocialSharing.js"></script>
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-controller="pageController" animation="slide-left-right-ios7">
+
+  <div ng-view></div>
+
+     <!-- Controllers -->
+    <script src="controllers/pageController.js"></script>
+  <script src="controllers/conteudoController.js"></script>
+  </body>
+</html>
